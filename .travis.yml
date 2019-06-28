@@ -11,8 +11,8 @@ install:
 before_script: true
 script:
 - jshint ./src
-- ./node_modules/.bin/ retire
-- ./node_modules/.bin/ twly
+- retire ./node_modules/.bin/
+- twly ./node_modules/.bin/
 # - "./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose"
 after_script: true
 # deploy:
