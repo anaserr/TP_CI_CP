@@ -1,21 +1,16 @@
 language: node_js
 node_js:
 - '12.0'
-# cache:
-#   directories:
-#   - "$HOME/.composer/cache"
-#   - "$HOME/.php-cs-fixer"
 before_install: true
 install:
 - npm install
 before_script: true
 script:
 - jshint ./src
-- ./node_modules/.bin/retire
-- ./node_modules/.bin/twly
+- "./node_modules/.bin/retire"
+- "./node_modules/.bin/twly"
 after_script: true
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: YYYUgc3SE/4JqNIIKRkf21Bu3A2i+gHRaVEuE8CvUO5augz1PXPBmyS5Nq0y2qhWSuLJjVbZ7JA697N3eBkCt9beVgUjcakbc/cgc7B/RNJtA3Yhhmlf4c6pL8OaEoYIaiOT01quhhdD2VXEP3DkBfyxuazhcW31OyxupPr6xhF2N00M2a/orWMkFWIiu1GN+NITgAwTlwvz1JKxHBApBSGD4PacOFXMcjTuNxZ6XzJTp8FWhIOrQz874NE2neQzpXc6i/lAgWhLFmlNXrTi/lJuc8OOIn1DJ2oM/hBmzQ+qj93GROhxnxeT9W4eIUPmT93uuXctUTFRqh+ItsQhELXOCx7gKMe8tBHVLXBJOW/wT2VRRkB4oEWzdwZE73eAD0JeLj14jgXUVH7376SLs2ShxKGa2Jf1Aee2+cGpEVOXZlwIoIGSa0HY+JCcGfUjyE8PW6ttanVDwgSKxxOQJBkkpA8Iyk2ddYB4ootJ3WiX8RmkCaMoJ6F7K0L+Mzk4J9K5elJvZtA6ToUGru0Lbg3iSy/smvJ0hfmbJZadzmXR2WbTGqtC0rTiwLuBWaMZTm3nHdsg5fjKr06LUBqlypmdm44Kw8fzQgcqXs8AL7tk7qBbUwr8mlG2s8zuM3A3HdklVumEY8Yoe3ESvcy0NcR+54hqRiAlPeHAAB2/XQA=
-#   app: ipssi-symfony
+deploy:
+  api_key:
+    secure: yGeN3HrZcyxdi2vvvXUaOAtRTVfd64ABuRAMdKgUmuJkgGX0U8ShhuV9xa4k63ngRKiNpZIaWCRmFM3Ep30TQhrAd8FG9Vk9F24+jx+4i11VS28TSb7Cf5jH6qS9jh7kDQ89iRO1o0RBDwmY4yHqCyMH1fx7tRB36Yu4q5sh4v3/hKAnm4LJMelJ5/6Nd3+b2ZkZNHhSPlc9WI9G+XoyBub9QiWFQgqvvthikeEUGtKrZ7SG3XJ/9NWQwSUuIZcVUME9M1xr3USfuyjn/8NqUc7gqa2cxMpfrgkaRHjMB7QzgX08bfsVsdx5XclTP97g5TbELQ3nUnB/OdBACsqIzpHpEAS3zjaF+vPiNd4j1/QnToWNfnwxG9ps1AuCImsa6tIfakm/m0eaG8977M4kMXoIX4bFnXzV06KqSXeiCMogW4icXgpJ69Dhi+Myk38jeMLSt0DQL8UEM1ZM5LjV6fPCpA1xqu1SwCtdqvxL53dxdJJgATsqwToe46DTobEloJ0Ra4bKTUcdAP0aGadPHWgzefD9J4/fuUU+YeO8bvmdjoFaMg6uN/06BhFEV+rL4Qfmyq+7Niktj9fch89ZfGmZjxATuXQLHP0pwGH9d4SM6qfjiLW2GGjPCC+0EzMnAbfpnNzEimztHFZuh/XK684iBqQePm8y5zHdGCA+z+E=
+  app: ipssi-evaluation-app
