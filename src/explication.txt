@@ -1,0 +1,2 @@
+pour bloquer une pull request vers master si la CI echoue: après chanque puch on va au github et on verifie que la case 
+"Require review from Code Owners" est cochée. 
