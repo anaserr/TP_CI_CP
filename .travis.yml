@@ -10,7 +10,7 @@ install:
 - npm install
 before_script: true
 script:
-- ./node_modules/.bin/ /src
+- jshint ./src
 # - "./vendor/bin/php-cs-fixer fix --dry-run --diff --verbose"
 after_script: true
 # deploy:
