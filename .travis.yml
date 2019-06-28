@@ -9,7 +9,8 @@ before_script: true
 script:
 - jshint ./src
 - "./node_modules/.bin/retire"
-- "./node_modules/.bin/twly"
+- if [ "$TRAVIS_BRANCH" == "master" ]; then ./node_modules/.bin/twly; fi
+
 after_script: true
 deploy:
   provider: heroku
